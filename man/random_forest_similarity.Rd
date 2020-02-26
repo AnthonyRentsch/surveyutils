@@ -2,8 +2,7 @@
 % Please edit documentation in R/match.R
 \name{random_forest_similarity}
 \alias{random_forest_similarity}
-\title{Compute similarity matrix from random forest. Method described in Pew article:
-https://www.pewresearch.org/methods/2018/01/26/how-different-weighting-methods-work/.}
+\title{Compute similarity matrix from random forest.}
 \usage{
 random_forest_similarity(sample_df, synthetic_population, factor_cols,
   predictor_cols)
@@ -21,6 +20,6 @@ random_forest_similarity(sample_df, synthetic_population, factor_cols,
 similarity_matrix (dataframe)
 }
 \description{
-Compute similarity matrix from random forest. Method described in Pew article:
+This method is described in this Pew article:
 https://www.pewresearch.org/methods/2018/01/26/how-different-weighting-methods-work/.
 }

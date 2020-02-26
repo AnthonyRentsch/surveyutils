@@ -2,9 +2,7 @@
 % Please edit documentation in R/match.R
 \name{get_most_similar}
 \alias{get_most_similar}
-\title{Return index of most similar column in distance matrix. 
-Does not consider target column, breaks ties at random,
-and only consider rows that have not been matched to yet.}
+\title{Return index of most similar column in distance matrix.}
 \usage{
 get_most_similar(ix, mat, relevant_inds, used_inds)
 }
@@ -21,7 +19,6 @@ get_most_similar(ix, mat, relevant_inds, used_inds)
 original_col (int)
 }
 \description{
-Return index of most similar column in distance matrix. 
 Does not consider target column, breaks ties at random,
 and only consider rows that have not been matched to yet.
 }

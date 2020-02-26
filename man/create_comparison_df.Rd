@@ -2,8 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{create_comparison_df}
 \alias{create_comparison_df}
-\title{Create wide dataframe to compare results of various methods.
-Intended to be used to simplify tutorial notebook.}
+\title{Create wide dataframe to compare results of various methods.}
 \usage{
 create_comparison_df(df_list, attribute)
 }
@@ -16,6 +15,5 @@ create_comparison_df(df_list, attribute)
 comparison_df dataframe
 }
 \description{
-Create wide dataframe to compare results of various methods.
 Intended to be used to simplify tutorial notebook.
 }

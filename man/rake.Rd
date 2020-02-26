@@ -2,7 +2,7 @@
 % Please edit documentation in R/rake.R
 \name{rake}
 \alias{rake}
-\title{Perform raking. If initialize_weights == FALSE, df must have a column named weight.}
+\title{Perform raking.}
 \usage{
 rake(sample_df, population_params, iterations = 1,
   initialize_weights = TRUE)
@@ -20,5 +20,6 @@ rake(sample_df, population_params, iterations = 1,
 sample_df (dataframe)
 }
 \description{
-Perform raking. If initialize_weights == FALSE, df must have a column named weight.
+Rakes sample_df to populations_params. 
+If initialize_weights == FALSE, df must have a column named weight.
 }

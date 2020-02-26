@@ -22,5 +22,6 @@ propensity_weight(sample_df, synthetic_population, model = "logreg",
 weighted_sample (dataframe)
 }
 \description{
-Perform propensity weighting.
+Computes the inverse propensity that each sample observation
+was included in the sample as opposed to being from the population.
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/cell_weight.R
 \name{cell_weight}
 \alias{cell_weight}
-\title{Perform cell weighting. Requires full joint distribution of covariates of interest.}
+\title{Perform cell weighting.}
 \usage{
 cell_weight(sample_df, attribute_col, population_cells)
 }
@@ -17,5 +17,5 @@ cell_weight(sample_df, attribute_col, population_cells)
 weighted_sample (dataframe)
 }
 \description{
-Perform cell weighting. Requires full joint distribution of covariates of interest.
+Requires full joint distribution of covariates of interest.
 }

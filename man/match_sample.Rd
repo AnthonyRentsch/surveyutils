@@ -2,9 +2,7 @@
 % Please edit documentation in R/match.R
 \name{match_sample}
 \alias{match_sample}
-\title{Perform matching.
-Takes synthetic population dataset and matches 
-sample cases to observations in that synthetic dataset.}
+\title{Perform matching.}
 \usage{
 match_sample(sample_df, synthetic_population, similarity_method = "rf",
   factor_cols = NA, predictor_cols = NA, quietly = FALSE)
@@ -26,7 +24,6 @@ match_sample(sample_df, synthetic_population, similarity_method = "rf",
 matched_sample (dataframe)'
 }
 \description{
-Perform matching.
 Takes synthetic population dataset and matches 
 sample cases to observations in that synthetic dataset.
 }

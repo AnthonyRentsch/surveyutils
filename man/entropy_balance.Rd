@@ -2,7 +2,7 @@
 % Please edit documentation in R/entropy_balance.R
 \name{entropy_balance}
 \alias{entropy_balance}
-\title{Perform entropy balancing. TODO.}
+\title{Perform entropy balancing.}
 \usage{
 entropy_balance(sample_df)
 }
@@ -13,5 +13,5 @@ entropy_balance(sample_df)
 weighred_sample (dataframe)
 }
 \description{
-Perform entropy balancing. TODO.
+TODO.
 }

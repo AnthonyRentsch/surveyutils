@@ -2,8 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{get_sample_distribution}
 \alias{get_sample_distribution}
-\title{Get weighted or unweighted sample distribution.
-If weighted, requires column named 'weight'.}
+\title{Compute weighted or unweighted sample distribution.}
 \usage{
 get_sample_distribution(df, attribute, weight = TRUE)
 }
@@ -18,6 +17,6 @@ get_sample_distribution(df, attribute, weight = TRUE)
 marginals (dataframe)
 }
 \description{
-Get weighted or unweighted sample distribution.
+Compute weighted or unweighted sample distribution.
 If weighted, requires column named 'weight'.
 }
