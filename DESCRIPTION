@@ -1,0 +1,16 @@
+Package: surveyutils
+Title: Utility Functions for Survey Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Anthony",
+           family = "Rentsch",
+           role = c("aut", "cre"),
+           email = "anthony.rentsch@gmail.com")
+Description: Functions to weight survey data and to analyze weighted survey data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+	plyr,
+	dplyr
+RoxygenNote: 6.1.1
