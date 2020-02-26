@@ -5,7 +5,7 @@ This repository contains some functions to weight and analyze weighted survey da
 **Installation**
 
 ```
-devtools::install_github('surveyutils', 'anthonyrentsch')
+devtools::install_github('AnthonyRentsch/surveyutils')
 ```
 
 **Supported techniques**
