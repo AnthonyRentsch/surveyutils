@@ -18,7 +18,7 @@ cell_weight <- function(sample_df, attribute_col, population_cells) {
   sample_joint_distro <- get_sample_distribution(sample_df, attribute_col, weight=FALSE)
 
   # initialize weight column
-  weighted_sample <- sample_df %>% mutate(weight = NA)
+  weighted_sample <- sample_df %>% dplyr::mutate(weight = NA)
   
   # calculate weight and assign it to rows with that combination of attributes
   for (attribute_combo in names(population_cells)) {

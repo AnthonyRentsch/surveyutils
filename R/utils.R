@@ -12,14 +12,14 @@ get_sample_distribution <- function(df, attribute, weight=TRUE) {
   
   attribute_eval <- rlang::sym(attribute)
   if (weight) { 
-    marginals <- df %>% group_by(!!attribute_eval) %>% 
-      summarise(n = sum(weight)) %>% 
-      mutate(pct = n / sum(n))
+    marginals <- df %>% dplyr::group_by(!!attribute_eval) %>% 
+      dplyr::summarise(n = sum(weight)) %>% 
+      dplyr::mutate(pct = n / sum(n))
   }
   else {
-    marginals <- df %>% group_by(!!attribute_eval) %>% 
-      summarise(n = n()) %>% 
-      mutate(pct = n / sum(n))
+    marginals <- df %>% dplyr::group_by(!!attribute_eval) %>% 
+      dplyr::summarise(n = n()) %>% 
+      dplyr::mutate(pct = n / sum(n))
   }
   return(marginals)
 }
@@ -37,7 +37,7 @@ combine_sample_synthetic <- function(sample_df, synthetic_population,
   
   # add label column
   syn_pop <- synthetic_population %>% mutate(label = 1)
-  samp <- sample_df %>% mutate(label = 0)
+  samp <- sample_df %>% dplyr::mutate(label = 0)
   
   # keep similar columns
   keep_cols <- c(predictor_cols, 'label')
@@ -73,7 +73,7 @@ create_comparison_df <- function(df_list, attribute) {
     cols <- c(attribute, names(df_list))
     
     # create comparison dataframe
-    comparison_df <- dplyr::bind_cols(df_list_to_bind) %>% select_(.dots = cols)
+    comparison_df <- dplyr::bind_cols(df_list_to_bind) %>% dplyr::select_(.dots = cols)
     
     return(comparison_df)
 }

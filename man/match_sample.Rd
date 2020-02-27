@@ -21,7 +21,7 @@ match_sample(sample_df, synthetic_population, similarity_method = "rf",
 \item{quietly}{boolean}
 }
 \value{
-matched_sample (dataframe)'
+matched_sample (dataframe)
 }
 \description{
 Takes synthetic population dataset and matches 

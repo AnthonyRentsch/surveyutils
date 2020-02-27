@@ -56,12 +56,13 @@ get_most_similar <- function(ix, mat, relevant_inds, used_inds) {
 #' @param factor_cols vector
 #' @param predictor_cols vector
 #' @param quietly boolean
-#' @return matched_sample (dataframe)'
+#' @return matched_sample (dataframe)
 #' @export
 match_sample <- function(sample_df, synthetic_population, similarity_method='rf',
                          factor_cols=NA, predictor_cols=NA, quietly=FALSE) {
   
   # calculate similarity matrix
+  # this is probably a bad way to do this
   if (similarity_method == 'rf') {
     if (quietly) {
       suppressMessages(require(randomForest))

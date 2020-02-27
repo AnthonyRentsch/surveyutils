@@ -17,6 +17,7 @@ propensity_weight <- function(sample_df, synthetic_population, model='logreg',
   model_df <- combine_sample_synthetic(sample_df, synthetic_population, factor_cols, predictor_cols)
   
   # fit model and get predictions
+  # this is probably a bad way to do this
   if (model == 'rf') {
     warning("Method currently unstable. Analyze results with caution. For better results, use 'logreg'.")
     require(randomForest)
@@ -44,7 +45,7 @@ propensity_weight <- function(sample_df, synthetic_population, model='logreg',
   rescaled_weights <- n_sample * (weights / sum(weights))
   
   # append to dataframe column
-  weighted_sample <- sample_df %>% mutate(weight = rescaled_weights)
+  weighted_sample <- sample_df %>% dplyr::mutate(weight = rescaled_weights)
   
   return(weighted_sample)
 }
