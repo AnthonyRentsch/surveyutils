@@ -1,6 +1,7 @@
 #' Perform cell weighting. 
 #' 
 #' Requires full joint distribution of covariates of interest.
+#' @importFrom magrittr %>%
 #' @param sample_df dataframe
 #' @param attribute_col string
 #' @param population_cells list of format list(joint_attribute1=x, joint_attribute2=y, ...)

@@ -2,6 +2,7 @@
 #' 
 #' Computes the inverse propensity that each sample observation
 #' was included in the sample as opposed to being from the population.
+#' @importFrom magrittr %>%
 #' @param sample_df dataframe
 #' @param synthetic_population dataframe
 #' @param model string ('rf', 'logreg')

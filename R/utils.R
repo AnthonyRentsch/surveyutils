@@ -2,6 +2,7 @@
 #' 
 #' Compute weighted or unweighted sample distribution.
 #' If weighted, requires column named 'weight'.
+#' @importFrom magrittr %>%
 #' @param df dataframe
 #' @param attribute string
 #' @param weight boolean
@@ -24,6 +25,7 @@ get_sample_distribution <- function(df, attribute, weight=TRUE) {
 }
 
 #' Combine sample and synthetic dataframes into one for modeling.
+#' @importFrom magrittr %>%
 #' @param sample_df dataframe
 #' @param synthetic_population dataframe
 #' @param factor_cols vector
