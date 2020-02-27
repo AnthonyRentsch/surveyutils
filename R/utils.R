@@ -9,7 +9,7 @@
 #' @export
 get_sample_distribution <- function(df, attribute, weight=TRUE) {
   
-  attribute_eval <- sym(attribute)
+  attribute_eval <- rlang::sym(attribute)
   if (weight) { 
     marginals <- df %>% group_by(!!attribute_eval) %>% 
       summarise(n = sum(weight)) %>% 
