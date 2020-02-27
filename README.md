@@ -19,4 +19,4 @@ devtools::install_github('AnthonyRentsch/surveyutils')
 **TODO** 
 - Entropy balancing ([example](https://github.com/cran/ebal/tree/master/R))
 
-Inspiration for this repository comes from [Pew Research Center](https://www.pewresearch.org/methods/2018/01/26/how-different-weighting-methods-work/), the [Cooperative Congressional Election Study](https://cces.gov.harvard.edu/), and [Data Science for Political Campaigns](https://github.com/therriault/dsforcampaigns_fall2019_public).
+Inspiration for this repository comes from [Pew Research Center](https://www.pewresearch.org/methods/2018/01/26/how-different-weighting-methods-work/), the [Cooperative Congressional Election Study](https://cces.gov.harvard.edu/), [Data Science for Political Campaigns](https://github.com/therriault/dsforcampaigns_fall2019_public), and the incredible R [survey package](https://cran.r-project.org/web/packages/survey/survey.pdf).
