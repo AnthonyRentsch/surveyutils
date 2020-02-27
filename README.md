@@ -2,7 +2,7 @@
 
 This repository contains functions to weight and analyze weighted survey data. I wrote this code for my own learning purposes, but feel free to use it. All mistakes are my own.
 
-Read my package tutorial [here](https://nbviewer.jupyter.org/gist/AnthonyRentsch/2f5905daa59feb02abac09ede4ca05d1#cell_weighting).
+Read my package tutorial [here](https://nbviewer.jupyter.org/gist/AnthonyRentsch/2f5905daa59feb02abac09ede4ca05d1).
 
 **Installation**
 
