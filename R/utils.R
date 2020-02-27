@@ -36,7 +36,7 @@ combine_sample_synthetic <- function(sample_df, synthetic_population,
 
   
   # add label column
-  syn_pop <- synthetic_population %>% mutate(label = 1)
+  syn_pop <- synthetic_population %>% dplyr::mutate(label = 1)
   samp <- sample_df %>% dplyr::mutate(label = 0)
   
   # keep similar columns
