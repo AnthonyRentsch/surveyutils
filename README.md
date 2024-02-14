@@ -2,7 +2,7 @@
 
 This repository contains functions to weight and analyze weighted survey data. Read my package tutorial <a href="https://nbviewer.jupyter.org/gist/AnthonyRentsch/2f5905daa59feb02abac09ede4ca05d1" target="_blank">here</a>.
 
-I started writing this package to polish up my R skills, to write my first R package, and to develop a more intutive interface (for me) for working with survey data (as good as the `survey` package is, I've never found the interface easy to use). 
+I started writing this package to polish up my R skills, to write my first R package, and to develop a more intuitive interface (for me) for working with survey data (as good as the `survey` package is, I've never found the interface easy to use). 
 
 This code is intended for my own learning purposes, but feel free to use it. All mistakes are my own.
 
